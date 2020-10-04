@@ -1,0 +1,116 @@
+# IPython log file
+
+# Tue, 29 Sep 2020 19:54:21
+>>>ipaddress.ip_address('192.0.2.1')
+# Tue, 29 Sep 2020 19:54:57
+>>>ipaddress.ip_address('2001:DB8::1')
+# Tue, 29 Sep 2020 19:56:04
+>>>ipaddress.ip_address(3221225985)
+# Tue, 29 Sep 2020 19:56:47
+>>>ipaddress.ip_address(42540766411282592856903984951653826561)
+# Tue, 29 Sep 2020 19:57:45
+>>>ipaddress.ip_address(1)
+# Tue, 29 Sep 2020 19:58:11
+>>>ipaddress.IPv4Address(1)
+# Tue, 29 Sep 2020 19:58:49
+ipaddress.IPv6Address(1)
+# Tue, 29 Sep 2020 19:59:40
+>>>ipaddress.IPv6Address(1)
+# Tue, 29 Sep 2020 20:02:59
+>>>ipaddress.ip_address('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:04:28
+>>>ipaddress.ip_network('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:05:03
+>>>ipaddress.ip_network('2001:db8::0/96')
+# Tue, 29 Sep 2020 20:06:53
+>>>ipaddress.ip_network('192.0.2.1/24')
+# Tue, 29 Sep 2020 20:08:03
+>>>ipaddress.ip_network('192.0.2.1/24', strict=False)
+# Tue, 29 Sep 2020 20:09:02
+>>>ipaddress.ip_network(3221225984)
+# Tue, 29 Sep 2020 20:09:50
+ipaddress.ip_network(42540766411282592856903984951653826560)
+# Tue, 29 Sep 2020 20:13:39
+ipaddress.ip_interface('192.0.2.1/24')
+# Tue, 29 Sep 2020 20:17:11
+ipaddress.ip_interface('2001:db8::1/96')
+# Tue, 29 Sep 2020 20:18:16
+addr4 = ipaddress.ip_address('192.0.2.1')
+# Tue, 29 Sep 2020 20:19:08
+addr6 = ipaddress.ip_address('2001:db*::1')
+# Tue, 29 Sep 2020 20:19:26
+addr6.version
+# Tue, 29 Sep 2020 20:20:16
+addr4.version
+# Tue, 29 Sep 2020 20:21:59
+host4 = ipaddress.ip_interface('192.0.2.1/24')
+# Tue, 29 Sep 2020 20:22:20
+host4.network
+# Tue, 29 Sep 2020 20:23:06
+host6 = ipaddress.ip_interface('2001:db8::1/96')
+# Tue, 29 Sep 2020 20:23:22
+>>>host6.network
+# Tue, 29 Sep 2020 20:24:49
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:25:13
+net4.num_addresses
+# Tue, 29 Sep 2020 20:26:12
+net6 = ipaddress.ip_network('2001:db8::0/96')
+# Tue, 29 Sep 2020 20:27:42
+net6.num_addresses
+# Tue, 29 Sep 2020 20:28:17
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:30:27
+for x in net4.hosts():
+    print(x)
+    
+# Tue, 29 Sep 2020 20:31:20
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:31:38
+net4.netmask
+# Tue, 29 Sep 2020 20:31:50
+net4.hostmask
+# Tue, 29 Sep 2020 20:32:57
+net6 = ipaddress.ip_network('2001:db8::0/96')
+# Tue, 29 Sep 2020 20:33:12
+net6.netmask
+# Tue, 29 Sep 2020 20:33:32
+net6.hostmask
+# Tue, 29 Sep 2020 20:33:55
+addr6.exploded
+# Tue, 29 Sep 2020 20:34:13
+addr6.compressed
+# Tue, 29 Sep 2020 20:34:35
+net6.exploded
+# Tue, 29 Sep 2020 20:34:52
+net6.compressed
+# Tue, 29 Sep 2020 20:35:12
+net4[1]
+# Tue, 29 Sep 2020 20:35:31
+net4[-1]
+# Tue, 29 Sep 2020 20:35:46
+net6[1]
+# Tue, 29 Sep 2020 20:36:14
+net6[-1]
+# Tue, 29 Sep 2020 20:37:39
+addr4 = ipaddress.ip_address('192.0.2.1')
+# Tue, 29 Sep 2020 20:38:20
+addr4 in ipaddress.ip_network('192.0.2.0/24')
+# Tue, 29 Sep 2020 20:39:33
+addr4 in ipaddress.ip_network('192.0.3.0/24')
+# Tue, 29 Sep 2020 20:40:45
+ipaddress.ip_address('192.0.2.1') < ipaddress.ip_address('192.0.2.2')
+# Tue, 29 Sep 2020 20:42:33
+addr4 = ipaddress.ip_address('192.0.2.1')
+# Tue, 29 Sep 2020 20:42:42
+str(addr4)
+# Tue, 29 Sep 2020 20:42:52
+int(addr4)
+# Tue, 29 Sep 2020 20:44:22
+ipaddress.ip_address("192.168.0.256")
+# Tue, 29 Sep 2020 20:44:52
+ipaddress.IPv4Address("192.168.0.256")
+# Tue, 29 Sep 2020 20:46:11
+ipaddress.ip_network("192.168.0.1/64")
+# Tue, 29 Sep 2020 20:47:12
+ipaddress.IPv4Network("192.168.0.1/64")
